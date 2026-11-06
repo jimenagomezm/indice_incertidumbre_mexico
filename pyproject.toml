@@ -1,0 +1,28 @@
+[project]
+name = "indice-incertidumbre-banxico"
+version = "0.1.0"
+description = "Índice de incertidumbre de Banxico construido con texto (anuncios y minutas): diccionario, embeddings y LLM"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    # datos y gráficas
+    "pandas>=3.0.3",
+    "numpy>=2.4.6",
+    "pyarrow>=24.0.0",
+    "matplotlib>=3.10.9",
+    # scraping y PDFs (notebooks 01 y 02)
+    "requests>=2.34.2",
+    "lxml>=6.1.1",
+    "pymupdf>=1.27.2.3",
+    "tqdm>=4.67.3",
+    # tokenizador y embeddings (notebooks 01, 02 y 04)
+    "transformers>=5.12.1",
+    "sentence-transformers>=5.6.0",
+    # llamadas al LLM vía OpenRouter (script de calificación y demo)
+    "httpx>=0.28.1",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2.2",
+    # notebooks
+    "jupyter>=1.1.1",
+    "ipykernel>=7.2.0",
+]

@@ -1,0 +1,14 @@
+# Entorno de Python
+.venv/
+__pycache__/
+*.py[oc]
+.ipynb_checkpoints/
+
+# Llaves: nunca subir
+.env
+
+# PDFs descargados por los notebooks 01 y 02 (~110 MB, se vuelven a descargar)
+data/raw/
+
+# Sistema operativo
+.DS_Store
